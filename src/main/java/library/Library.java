@@ -21,7 +21,7 @@ public class Library {
      * @return Set<String> set containing all book titles in library
      */
     public Set<String> getTitles() {
-        return bookSet.stream().map(book -> book.getTitle()).collect(Collectors.toSet());
+        return null;
     }
 
     /**
@@ -32,7 +32,7 @@ public class Library {
      * @return Set<Book> set of books with at least minNumPages pages
      */
     public Set<Book> getLongBooks(int minNumPages) {
-        return bookSet.stream().filter(book -> book.getNumPages() >= minNumPages).collect(Collectors.toSet());
+        return null; 
     }
 
     /**
@@ -41,7 +41,7 @@ public class Library {
      * @return Book such that no other Book in library has more pages it
      */
     public Book getLongestBook() {
-        return bookSet.stream().reduce((book1,book2) -> book1.getNumPages() >= book2.getNumPages() ? book1 : book2).get(); 
+        return null; 
     }
 
     /**
@@ -50,7 +50,7 @@ public class Library {
      * @return int sum of the pages of all books in library
      */
     public int getTotalNumPages() {
-        return bookSet.stream().map(book -> book.getNumPages()).reduce(0, (a,b) -> a+b);
+        return -1;
     }
 
     /**
@@ -61,7 +61,7 @@ public class Library {
      * @return Set<Book> all books in library with genre as its genre
      */
     public Set<Book> getBooksWithGenre(Genre genre) {
-        return bookSet.stream().filter(book -> book.getGenre() == genre).collect(Collectors.toSet()); 
+        return null;
     }
 
 }

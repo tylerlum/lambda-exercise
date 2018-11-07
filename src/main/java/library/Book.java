@@ -61,19 +61,4 @@ public class Book {
     public String toString() {
         return title;
     }
-
-    public int hashCode() {
-        return title.hashCode();
-    }
-
-    public boolean equals(Object o) {
-        if (o == this) {
-            return true;
-        } else if (o instanceof Book) {
-            Book ob = (Book)o;
-            return title.equals(ob.title) && author.equals(ob.author) && genre == ob.genre && numPages == ob.numPages;
-        } else {
-            return false;
-        }
-    }
 }
