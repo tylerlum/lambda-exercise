@@ -21,7 +21,7 @@ public class Library {
      * @return Set<String> set containing all book titles in library
      */
     public Set<String> getTitles() {
-	return bookSet.stream().map(book -> book.getTitle()).collect(Collectors.toSet());
+        return bookSet.stream().map(book -> book.getTitle()).collect(Collectors.toSet());
     }
 
     /**

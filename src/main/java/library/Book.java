@@ -22,9 +22,9 @@ public class Book {
      */
     public Book(String title, Name author, Genre genre, int numPages) {
         this.title = title;
-	this.author = author;
-	this.genre = genre;
-	this.numPages = numPages;
+        this.author = author;
+        this.genre = genre;
+        this.numPages = numPages;
     }
 
     /**
@@ -69,11 +69,11 @@ public class Book {
     public boolean equals(Object o) {
         if (o == this) {
             return true;
-	} else if (o instanceof Book) {
+        } else if (o instanceof Book) {
             Book ob = (Book)o;
-	    return title.equals(ob.title) && author.equals(ob.author) && genre == ob.genre && numPages == ob.numPages;
-	} else {
-	    return false;
-	}
+            return title.equals(ob.title) && author.equals(ob.author) && genre == ob.genre && numPages == ob.numPages;
+        } else {
+            return false;
+        }
     }
 }

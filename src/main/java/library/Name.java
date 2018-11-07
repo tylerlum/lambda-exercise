@@ -15,7 +15,7 @@ public class Name {
      */
     public Name(String firstName, String lastName) {
         this.firstName = firstName;
-	this.lastName = lastName;
+        this.lastName = lastName;
     }
 
     /**
@@ -51,11 +51,11 @@ public class Name {
     public boolean equals(Object o) {
         if (o == this) {
             return true;
-	} else if (o instanceof Name) {
+        } else if (o instanceof Name) {
             Name on = (Name)o;
             return firstName.equals(on.firstName) && lastName.equals(on.lastName);
-	} else {
+        } else {
             return false;
-	}
+        }
     }
 }
