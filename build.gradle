@@ -12,7 +12,7 @@ dependencies {
     testImplementation 'junit:junit:4.12'
 }
 
-test.testLoggign {
+test.testLogging {
     exceptionFormat = "full";
     events "failed", "passed", "skipped", "standardOut", "standardError"
 }
