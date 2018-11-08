@@ -21,6 +21,7 @@ public class Library {
      * @return Set<String> set containing all book titles in library
      */
     public Set<String> getTitles() {
+        // TODO: Implement this method in one line of code
         return null;
     }
 
@@ -32,6 +33,7 @@ public class Library {
      * @return Set<Book> set of books with at least minNumPages pages
      */
     public Set<Book> getLongBooks(int minNumPages) {
+        // TODO: Implement this method in one line of code
         return null; 
     }
 
@@ -41,6 +43,7 @@ public class Library {
      * @return Book such that no other Book in library has more pages it
      */
     public Book getLongestBook() {
+        // TODO: Implement this method in one line of code
         return null; 
     }
 
@@ -50,6 +53,7 @@ public class Library {
      * @return int sum of the pages of all books in library
      */
     public int getTotalNumPages() {
+        // TODO: Implement this method in one line of code
         return -1;
     }
 
@@ -61,6 +65,7 @@ public class Library {
      * @return Set<Book> all books in library with genre as its genre
      */
     public Set<Book> getBooksWithGenre(Genre genre) {
+        // TODO: Implement this method in one line of code
         return null;
     }
 
